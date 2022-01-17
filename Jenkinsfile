@@ -1,4 +1,5 @@
 pipeline {
+    agent any
 
     environment {
         ENTER_CRED = credentials('jenkins_aws_cred')
