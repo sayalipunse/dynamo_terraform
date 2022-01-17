@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "my-bucket" {
-  bucket = "pillas3-terraform-state"
+  bucket = "pillas3-terraform"
   acl    = "private"
 
 
@@ -26,7 +26,7 @@ terraform {
 
 
 resource "aws_dynamodb_table" "client_data" {
-  name = "cpillas3-dynamodb-lock-state"
+  name = "cpillas3-dynamodb"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
   write_capacity = 20
